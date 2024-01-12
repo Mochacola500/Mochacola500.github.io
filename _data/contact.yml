@@ -3,11 +3,11 @@
 - type: github
   icon: "fab fa-github"
 
-- type: twitter
-  icon: "fa-brands fa-x-twitter"
+- type: paratranz
+  icon: "https://paratranz.cn/users/38869"
 
 - type: email
-  icon: "fas fa-envelope"
+  icon: "techboydonghyeon@gmail.com"
   noblank: true # open link in current tab
 
 - type: rss
