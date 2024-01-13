@@ -4,10 +4,11 @@
   icon: "fab fa-github"
 
 - type: paratranz
-  icon: "https://paratranz.cn/users/38869"
+  icon: "fab fa-p"
+  url: "https://paratranz.cn/users/3886"
 
 - type: email
-  icon: "techboydonghyeon@gmail.com"
+  icon: "fab fa-envelope"
   noblank: true # open link in current tab
 
 - type: rss
