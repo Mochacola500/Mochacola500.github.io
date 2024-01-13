@@ -5,10 +5,10 @@
 
 - type: paratranz
   icon: "fab fa-p"
-  url: "https://paratranz.cn/users/3886"
+  url: "https://paratranz.cn/users/38869"
 
 - type: email
-  icon: "fab fa-envelope"
+  icon: "fas fa-envelope"
   noblank: true # open link in current tab
 
 - type: rss
