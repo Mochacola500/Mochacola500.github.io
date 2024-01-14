@@ -1,14 +1,17 @@
 @echo off
-for /f "tokens=2 delims==" %%a in ('wmic OS Get localdatetime /value') do set "dt=%%a"
-set "YY=%dt:~2,2%" & set "YYYY=%dt:~0,4%" & set "MM=%dt:~4,2%" & set "DD=%dt:~6,2%"
-set "HH=%dt:~8,2%" & set "Min=%dt:~10,2%" & set "Sec=%dt:~12,2%" & set "MS=%dt:~15,3%"
-set "datestamp=%YYYY%-%MM%-%DD%"
-set "hmsdatestamp=%HH%:%Min%:%Sec%"
 
-echo --- >> %datestamp%-.md
-echo title: >> %datestamp%-.md
-echo date: %datestamp% %hmsdatestamp% +0900 >> %datestamp%-.md
-echo categories: >> %datestamp%-.md
-echo tags: >> %datestamp%-.md
-echo --- >> %datestamp%-.md
+for /f "tokens=2 delims==" %%a in ('wmic OS Get localdatetime /value') do set "dt=%%a"
+set "Year=%dt:~0,4%" & set "Month=%dt:~4,2%" & set "Day=%dt:~6,2%"
+set "Hour=%dt:~8,2%" & set "Min=%dt:~10,2%" & set "Sec=%dt:~12,2%"
+set "YMSdatestamp=%Year%-%Month%-%Day%"
+set "HMSdatestamp=%Hour%:%Min%:%Sec%"
+set "filename=_posts/%YMSdatestamp%-.md"
+
+echo Create %filename% file.
+echo --- > %filename%
+echo title: >> %filename%
+echo date: %YMSdatestamp% %HMSdatestamp% +0900 >> %filename%
+echo categories: >> %filename%
+echo tags: >> %filename%
+echo --- >> %filename%
 pause
