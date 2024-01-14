@@ -187,6 +187,7 @@ exclude:
   - LICENSE
   - rollup.config.js
   - package*.json
+  - post.bat
 
 jekyll-archives:
   enabled: [categories, tags]
