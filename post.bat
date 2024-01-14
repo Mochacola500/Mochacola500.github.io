@@ -8,7 +8,6 @@ set "hmsdatestamp=%HH%:%Min%:%Sec%"
 echo --- >> %datestamp%-.md
 echo title: >> %datestamp%-.md
 echo date: %datestamp% %hmsdatestamp% +0900 >> %datestamp%-.md
-echo author: Mochacola >> %datestamp%-.md
 echo categories: >> %datestamp%-.md
 echo tags: >> %datestamp%-.md
 echo --- >> %datestamp%-.md
