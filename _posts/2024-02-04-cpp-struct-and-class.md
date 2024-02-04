@@ -7,4 +7,4 @@ tags:
     - [cpp]
 --- 
 
-- 기본 접근지정자가 struct는 public, class는 private 이라는 점을 제외하면 내부적으로는 동일하다.
+- 기본 접근지정자가 struct는 public, class는 private 이라는 점을 제외하면 내부적으로는 동일합니다.
