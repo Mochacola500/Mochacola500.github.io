@@ -16,7 +16,7 @@ tags:
 ## 목차
 
 |                 | move 가능| move 불가능|         |
-|                 |          |            |         |
+|---|---|---|---|
 | identity 보유   | xvalue   | lvalue     | glvalue |
 | identity 미보유 | prvalue  |            |         |
 |                 | rvalue   |            |         |
@@ -30,7 +30,7 @@ Mixed category
 - glvalue: `identity`가 있는 모든 표현식 (lvalue, xvalue)
 - rvalue: `move`될 수 있는 모든 표현식 (prvalue, xvalue)
 
-# lvalue
+## lvalue
 
 모든 변수, 함수, 전위증감자, lvalue 참조, 문자열 등은 lvaue 입니다.
 
